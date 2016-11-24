@@ -1,6 +1,6 @@
 ﻿namespace COMP1004_F2016_Lesson11
 {
-    partial class Form1
+    partial class StartForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // BackButton
+            // 
+            this.BackButton.Size = new System.Drawing.Size(10, 49);
+            this.BackButton.Visible = false;
+            // 
+            // StartForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(383, 355);
+            this.Name = "StartForm";
+            this.Text = "StartForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

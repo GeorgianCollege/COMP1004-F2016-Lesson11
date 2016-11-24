@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace COMP1004_F2016_Lesson11
 {
-    public partial class Form1 : Form
+    public partial class NextForm : BaseForm
     {
-        public Form1()
+        //public StartForm PreviousForm { get; set; }
+
+        public NextForm()
         {
             InitializeComponent();
+
+            this.NextForm = new FinalForm();
+            this.NextForm.PreviousForm = this;
+            
         }
+
+       
+
+       
     }
 }
